@@ -5,7 +5,6 @@ import { Context } from "..";
 
 const TypeBar = observer(() => {
   const { device } = useContext(Context);
-  console.log(device.types);
   return (
     <ListGroup>
       {device.types.map((type) => (

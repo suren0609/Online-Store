@@ -56,10 +56,11 @@ const DevicePage = () => {
         </Col>
       </Row>
       <Row className="d-flex flex-column m-3">
+        <h1>Charachteristics</h1>
         {description.map((info, i) => (
           <Row
             key={info.id}
-            style={{ background: i % 2 === 0 ? "lightgray" : "transparent" }}
+            style={{ background: i % 2 === 0 ? "lightgray" : "transparent", padding: "10px" }}
           >
             {info.title}: {info.description}
           </Row>
